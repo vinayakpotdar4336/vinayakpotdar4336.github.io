@@ -263,3 +263,87 @@ footer {
 .edu-card ul li {
     margin-bottom: 10px;
 }
+
+/* ================= ANIMATED HOVER EFFECTS ================= */
+
+/* NAV LINKS HOVER LINE */
+nav ul li a {
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* BUTTON HOVER */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* SKILL CARD HOVER */
+.skill-card {
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.3);
+}
+
+/* SKILL ICON ANIMATION */
+.skill-card i {
+    transition: 0.4s;
+}
+
+.skill-card:hover i {
+    transform: rotate(12deg) scale(1.2);
+    color: #7dd3fc;
+}
+
+/* PROJECT CARD HOVER */
+.project-card {
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+}
+
+/* EDUCATION CARD HOVER */
+.edu-card {
+    transition: 0.4s;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+}
+
+/* SOCIAL ICONS HOVER */
+.icons i {
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.25) rotate(10deg);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
