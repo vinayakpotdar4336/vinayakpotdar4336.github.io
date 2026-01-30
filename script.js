@@ -1,2 +1,2 @@
 // Optional JavaScript
-console.log("Portfolio Loaded Successfully");
+console.log("Vinayak Potdar Portfolio Loaded Successfully");
