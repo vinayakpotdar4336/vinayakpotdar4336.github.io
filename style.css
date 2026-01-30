@@ -126,3 +126,63 @@ footer {
     padding: 20px;
     background: #020617;
 }
+
+/* ============================= */
+/* EDUCATION & ACHIEVEMENTS */
+/* ============================= */
+
+.education-section {
+    background: #020617;        /* dark theme match */
+    padding: 60px 10%;
+}
+
+.education-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-align: center;
+}
+
+.education-section .underline {
+    width: 120px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 10px auto 40px auto;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.edu-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.edu-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #e5e7eb;
+}
+
+.edu-card .college,
+.edu-card .year,
+.edu-card .award {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+.edu-card ul {
+    padding-left: 20px;
+}
+
+.edu-card ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
