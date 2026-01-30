@@ -1,5 +1,4 @@
 // Optional JavaScript
-console.log("Vinayak Potdar Portfolio Loaded Successfully");
 function scrollLeft() {
     document.getElementById("projectsContainer").scrollBy({
         left: -300,
@@ -13,4 +12,6 @@ function scrollRight() {
         behavior: "smooth"
     });
 }
+
+console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
