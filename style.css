@@ -81,54 +81,42 @@ nav ul li a {
     color: #38bdf8;
 }
 
-/* SKILLS */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #e5d6b8;
-}
+/* TECHNICAL SKILLS */
 
-/* SECTION */
 .skills-section {
+    background: #e6d6b8;
     padding: 60px 10%;
+    text-align: center;
 }
 
 .skills-section h2 {
     font-size: 32px;
-    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .underline {
-    width: 120px;
-    height: 4px;
-    background: #ff6a00;
-    margin: 10px 0 40px;
+    width: 80px;
+    height: 3px;
+    background: orange;
+    margin: 10px auto 40px;
 }
 
-/* GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
 
-/* CARD */
 .skill-card {
-    background: #f3f3f3;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: #f4f4f4;
+    padding: 30px 20px;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-}
-
 .skill-card i {
-    font-size: 32px;
-    color: #ff6a00;
+    font-size: 28px;
+    color: orange;
     margin-bottom: 15px;
 }
 
@@ -136,21 +124,9 @@ body {
     margin-bottom: 10px;
 }
 
-.skill-card p {
-    color: #555;
-}
-
-/* RESPONSIVE */
-@media(max-width:1000px){
-    .skills-grid{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media(max-width:600px){
-    .skills-grid{
-        grid-template-columns: 1fr;
-    }
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* PROJECTS */
