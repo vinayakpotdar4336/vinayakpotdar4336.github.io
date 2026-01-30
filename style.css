@@ -112,12 +112,64 @@ nav ul li a {
     color: #38bdf8;
     text-decoration: none;
 }
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#111;
+}
 
+.contact-section{
+    text-align:center;
+    padding:60px 20px;
+    color:white;
+    background:linear-gradient(to right,#1c1c1c,#2a2a2a);
+}
 
-/* CONTACT LINKS */
-#contact a {
-    color: #38bdf8;
-    text-decoration: none;
+.contact-section h2{
+    font-size:32px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.underline{
+    width:80px;
+    height:3px;
+    background:#ff6a00;
+    margin:10px auto 25px;
+}
+
+.contact-section p{
+    color:#cfcfcf;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.icons i{
+    font-size:26px;
+    color:white;
+    background:#222;
+    padding:15px;
+    border-radius:50%;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.icons i:hover{
+    background:#ff6a00;
+}
+
+.footer-text{
+    color:#b5b5b5;
+    font-size:14px;
+}
+
 }
 
 /* FOOTER */
