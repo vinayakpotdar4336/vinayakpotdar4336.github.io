@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* BODY */
 body {
     background: linear-gradient(135deg, #0a192f, #112240);
     color: #e5e7eb;
@@ -82,14 +83,6 @@ nav ul li a {
 }
 
 /* TECHNICAL SKILLS */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #e5d6b8;
-}
-
-/* SECTION */
 .skills-section {
     padding: 60px 10%;
 }
@@ -97,13 +90,14 @@ body {
 .skills-section h2 {
     font-size: 32px;
     font-weight: bold;
+    color: #38bdf8;
 }
 
 .underline {
     width: 120px;
     height: 4px;
-    background: #ff6a00;
-    margin: 10px 0 40px;
+    background: #38bdf8;
+    margin: 10px auto 40px;
 }
 
 /* GRID */
@@ -115,11 +109,11 @@ body {
 
 /* CARD */
 .skill-card {
-    background: #f3f3f3;
+    background: #020617;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     transition: 0.3s;
 }
 
@@ -129,16 +123,17 @@ body {
 
 .skill-card i {
     font-size: 32px;
-    color: #ff6a00;
+    color: #38bdf8;
     margin-bottom: 15px;
 }
 
 .skill-card h3 {
     margin-bottom: 10px;
+    color: white;
 }
 
 .skill-card p {
-    color: #555;
+    color: #cbd5f5;
 }
 
 /* RESPONSIVE */
@@ -172,25 +167,16 @@ body {
     text-decoration: none;
 }
 
-/* CONTACT SECTION */
+/* CONTACT */
 .contact-section {
     text-align: center;
     padding: 60px 20px;
-    color: white;
-    background: linear-gradient(to right,#1c1c1c,#2a2a2a);
+    background: #020617;
 }
 
 .contact-section h2 {
     font-size: 32px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.underline {
-    width: 80px;
-    height: 3px;
-    background: #ff6a00;
-    margin: 10px auto 25px;
 }
 
 .contact-section p {
@@ -209,7 +195,7 @@ body {
 .icons i {
     font-size: 26px;
     color: white;
-    background: #222;
+    background: #111827;
     padding: 15px;
     border-radius: 50%;
     transition: 0.3s;
@@ -217,7 +203,8 @@ body {
 }
 
 .icons i:hover {
-    background: #ff6a00;
+    background: #38bdf8;
+    color: black;
 }
 
 .footer-text {
@@ -232,24 +219,15 @@ footer {
     background: #020617;
 }
 
-/* EDUCATION & ACHIEVEMENTS */
+/* EDUCATION */
 .education-section {
-    background: #020617;
     padding: 60px 10%;
 }
 
 .education-section h2 {
     font-size: 30px;
-    font-weight: bold;
     color: #38bdf8;
     text-align: center;
-}
-
-.education-section .underline {
-    width: 120px;
-    height: 4px;
-    background: #38bdf8;
-    margin: 10px auto 40px;
 }
 
 .edu-grid {
