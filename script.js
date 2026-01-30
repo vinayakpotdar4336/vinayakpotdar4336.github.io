@@ -6,24 +6,21 @@ const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
 
-let scrollAmount = 0;
-const cardWidth = document.querySelector('.project-card').offsetWidth + 20; // card width + gap
+function getCardWidth() {
+    const card = document.querySelector('.project-card');
+    const style = window.getComputedStyle(card);
+    const gap = 20; // same as CSS gap
+    return card.offsetWidth + gap;
+}
 
-// Next Button
 nextBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-        left: cardWidth,
-        behavior: 'smooth'
-    });
+    carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
 });
 
-// Previous Button
 prevBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-        left: -cardWidth,
-        behavior: 'smooth'
-    });
+    carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
 });
+
 
 // Optional: Auto-scroll every 5 seconds
 // setInterval(() => {
