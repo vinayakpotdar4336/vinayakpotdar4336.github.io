@@ -467,3 +467,63 @@ nav ul li a:hover::after {
     color: #aaa;
 }
 
+/* == Work Experience == */ 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fdf6e7;
+  color: #111;
+}
+
+.resume-section {
+  max-width: 900px;
+  padding: 48px 64px;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.underline {
+  width: 220px;
+  height: 4px;
+  background-color: #ff7a18;
+  margin: 8px 0 32px 0;
+}
+
+.role {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.company {
+  font-size: 16px;
+  margin: 0;
+}
+
+.duration {
+  font-size: 15px;
+  margin: 4px 0 20px 0;
+}
+
+.responsibilities {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.responsibilities li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
