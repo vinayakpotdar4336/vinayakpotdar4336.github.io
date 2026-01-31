@@ -406,3 +406,64 @@ nav ul li a:hover::after {
     transform: scale(1.25) rotate(10deg);
     box-shadow: 0 0 20px #38bdf8;
 }
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+    background: radial-gradient(circle at top, #050b1f, #000);
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: #00c6ff;
+    margin: 15px auto 30px;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #cfd9ff;
+    margin-bottom: 40px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.contact-icons a {
+    width: 55px;
+    height: 55px;
+    background: #0f172a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-icons a:hover {
+    background: #00c6ff;
+    color: #000;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,198,255,0.4);
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #aaa;
+}
+
