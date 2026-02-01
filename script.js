@@ -1,48 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Optional JavaScript
+console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
-  // ===== PROJECT CAROUSEL =====
-  const carousel = document.querySelector(".carousel");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
+// Project 
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
 
-  if (carousel && prev && next) {
-    const scrollAmount = 300;
+function getCardWidth() {
+    const card = document.querySelector('.project-card');
+    const style = window.getComputedStyle(card);
+    const gap = 20; // same as CSS gap
+    return card.offsetWidth + gap;
+}
 
-    next.onclick = () => carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    prev.onclick = () => carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  }
-
-  // ===== PARTICLES =====
-  const canvas = document.getElementById("particles");
-  if (!canvas) return;
-
-  const ctx = canvas.getContext("2d");
-  canvas.width = innerWidth;
-  canvas.height = innerHeight;
-
-  let particles = Array.from({ length: 40 }, () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    r: Math.random() * 2 + 1,
-    dx: (Math.random() - 0.5),
-    dy: (Math.random() - 0.5)
-  }));
-
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      p.x += p.dx;
-      p.y += p.dy;
-      if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-      if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(56,189,248,0.8)";
-      ctx.fill();
-    });
-    requestAnimationFrame(animate);
-  }
-
-  animate();
+nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
 });
+
+prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+});
+
+
+// Optional: Auto-scroll every 5 seconds
+// setInterval(() => {
+//     carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+// }, 5000);
