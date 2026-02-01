@@ -26,3 +26,20 @@ prevBtn.addEventListener('click', () => {
 // setInterval(() => {
 //     carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
 // }, 5000);
+
+
+document.addEventListener("click", function (e) {
+    for (let i = 0; i < 6; i++) {
+        let smoke = document.createElement("div");
+        smoke.className = "smoke";
+
+        smoke.style.left = e.clientX + Math.random() * 20 - 10 + "px";
+        smoke.style.top = e.clientY + Math.random() * 20 - 10 + "px";
+
+        document.body.appendChild(smoke);
+
+        setTimeout(() => {
+            smoke.remove();
+        }, 1500);
+    }
+});
