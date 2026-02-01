@@ -51,17 +51,6 @@ function createSmoke(x, y) {
 }
 
 // click smoke
-document.addEventListener('click', (e) => {
-    createSmoke(e.clientX, e.clientY);
-});
-
-// mouse move trail
-let trailTimeout;
-document.addEventListener('mousemove', (e) => {
-    if(trailTimeout) return; // throttle
-    createSmoke(e.clientX, e.clientY);
-    trailTimeout = setTimeout(() => trailTimeout = null, 50); // adjust speed
-});
 
 
 // Optional: Auto-scroll every 5 seconds
