@@ -26,4 +26,3 @@ prevBtn.addEventListener('click', () => {
 // setInterval(() => {
 //     carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
 // }, 5000);
-
