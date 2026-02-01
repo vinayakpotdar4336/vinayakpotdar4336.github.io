@@ -1,222 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinayak Potdar | Data Analyst</title>
-    
-    <!-- Font Awesome ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+/* BODY */
+body {
+    background: linear-gradient(135deg, #0a192f, #112240);
+    color: #e5e7eb;
+    line-height: 1.6;
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
 
-<body>
+nav ul {
+    display: flex;
+    list-style: none;
+}
 
-<!-- NAVBAR -->
-<nav>
-    <h2 class="logo">Vinayak</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+nav ul li {
+    margin-left: 20px;
+}
 
-<!-- HOME -->
-<section id="home" class="home">
-    <h1>Hi, I'm <span>Vinayak Potdar</span></h1>
-    <h3>Fresher Data Analyst</h3>
-    <p>
-        I am a fresher Data Analyst skilled in SQL, Excel, and Power BI.
-        I enjoy analyzing data and building dashboards to support business decisions.
-        Actively looking for an internship or entry-level Data Analyst role.
-    </p>
+nav ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
 
-    <div class="buttons">
-        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-        <a href="https://github.com/vinayakpotdar4336" target="_blank" class="btn outline">GitHub</a>
-        <a href="https://www.linkedin.com/in/vinayak-potdar-19b52b391" target="_blank" class="btn outline">LinkedIn</a>
-    </div>
-</section>
+.logo {
+    color: #38bdf8;
+}
 
-<title>Technical Skills</title>
+/* HOME */
+.home {
+    padding: 80px 10%;
+    text-align: center;
+}
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+.home span {
+    color: #38bdf8;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+.buttons {
+    margin-top: 25px;
+}
 
-<body>
-<title>Technical Skills</title>
+.btn {
+    background: #38bdf8;
+    color: #020617;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+.btn.outline {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+/* SECTIONS */
+.section {
+    padding: 60px 10%;
+}
 
-<body>
-    
-<!-- TECHNICAL SKILLS -->
-<section class="skills-section">
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
 
-    <h2>TECHNICAL SKILLS</h2>
-    <div class="underline"></div>
+/* TECHNICAL SKILLS */
+.skills-section {
+    padding: 60px 10%;
+}
 
-    <div class="skills-grid">
+.skills-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #38bdf8;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-code"></i>
-            <h3>Languages</h3>
-            <p> Python , SQL </p>
-        </div>
+.underline {
+    width: 120px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 10px auto 40px;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-microchip"></i>
-            <h3> Other Skill </h3>
-            <p>Canva , CorelDraw , Photoshop , Ideogram ai </p>
-        </div>
+/* GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-cogs"></i>
-            <h3>RTOS</h3>
-            <p>Zephyr RTOS, FreeRTOS</p>
-        </div>
+/* CARD */
+.skill-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-wifi"></i>
-            <h3>Wireless</h3>
-            <p>BLE, LoRa, MQTT, 4G-LTE</p>
-        </div>
+.skill-card:hover {
+    transform: translateY(-5px);
+}
 
-        <div class="skill-card">
-            <i class="fas fa-cloud"></i>
-            <h3> Tools </h3>
-            <p> Jupyter Notebook , VS Code , MySQLWorkbench , Excel / Google Sheets , Power BI Desktop , Microsoft Ofiice </p>
-        </div>
+.skill-card i {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-tools"></i>
-            <h3> Data Handling </h3>
-            <p>Data Cleaning,
-Data Validation,
-Handling Missing Values,
-Data Transformation </p>
-        </div>
+.skill-card h3 {
+    margin-bottom: 10px;
+    color: white;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-bolt"></i>
-            <h3>Hardware Interfacing</h3>
-            <p>GPIO, I2C, SPI, UART, ADC</p>
-        </div>
+.skill-card p {
+    color: #cbd5f5;
+}
 
-        <div class="skill-card">
-            <i class="fas fa-leaf"></i>
-            <h3> Visualization </h3>
-            <p> Bar Charts,
-Line Charts,
-Pie Charts,
-KPIs,
-Slicers </p>
-        </div>
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .skills-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
-    </div>
+@media(max-width:600px){
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+}
 
-</section>
+/* PROJECTS */
 
-<!-- PROJECTS -->
-<section class="projects-section">
-    <h2>KEY PROJECTS</h2>
-    <p class="note">*Images are taken from Internet and no copyright intended</p>
+.projects-section {
+    position: relative;
+    padding: 40px 20px;
+    background: #0a192f;
+    color: #e5e7eb;
+}
 
-    <!-- Carousel Buttons -->
-    <button class="carousel-btn prev">&#10094;</button>
-    <button class="carousel-btn next">&#10095;</button>
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+}
 
-    <!-- Carousel Container -->
-    <div class="carousel">
-        <div class="project-card">
-            <img src="project1.png" alt="IAQ Sensor">
-            <h3>Kirby – IAQ Sensor</h3>
-        </div>
+.carousel::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+}
 
-        <div class="project-card">
-            <img src="project2.png" alt="Pet Wearable">
-            <h3>Ultra Paws – Pet Wearable</h3>
-        </div>
+.project-card {
+    min-width: 260px;
+    background: #112240;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
 
-        <div class="project-card">
-            <img src="project3.png" alt="Railway Controller">
-            <h3>Railway Coupling Controller</h3>
-        </div>
+.project-card:hover {
+    transform: scale(1.05);
+}
 
-        <div class="project-card">
-            <img src="project4.png" alt="Heater Controller">
-            <h3>Heater + Peltier Controller</h3>
-        </div>
+.project-card img {
+    width: 100%;
+    display: block;
+}
 
-        <div class="project-card">
-            <img src="project5.png" alt="Other Sensor">
-            <h3>Other Sensor Project</h3>
-        </div>
-    </div>
-</section>
+.project-card h3 {
+    margin: 10px;
+    font-size: 16px;
+    color: #38bdf8;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(56,189,248,0.8);
+    border: none;
+    color: #020617;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: #38bdf8;
+    color: #fff;
+}
 
 
-<!-- EDUCATION -->
-<section id="education" class="section">
-    <h2>EDUCATION & ACHIEVEMENTS</h2>
-    <div class="underline"></div>
 
-    <div class="edu-grid">
-        <div class="edu-card">
-            <h3>Bachelor of Computer Application</h3>
-            <p class="college">Bharati Vidyapeeth Deemed University Kolhapur</p>
-            <p class="year">2022 – 2025 | CGPA: 8.1</p>
-            <p class="award"><em>Awarded Best Outgoing Student</em></p>
-        </div>
+/* CONTACT */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #020617;
+}
 
-        <div class="edu-card">
-            <h3>Certifications & Achievements</h3>
-            <ul>
-                <li>⭐ Data Analyst Certification</li>
-                <li>⭐ IDE Bootcamp Bihar</li>
-                <li>⭐ AI-Powered Excel & Power BI Course</li>
-            </ul>
-        </div>
-    </div>
-</section>
+.contact-section h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-    <h2>GET IN TOUCH</h2>
-    <div class="underline"></div>
+.contact-section p {
+    color: #cfcfcf;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
 
-    <p>Always excited to work on data & analytics challenges</p>
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
 
-    <div class="icons">
-        <i class="fas fa-map-marker-alt"></i>
-        <i class="fas fa-phone"></i>
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-github"></i>
-    </div>
+.icons i {
+    font-size: 26px;
+    color: white;
+    background: #111827;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-    <div class="footer-text">
-        © 2026 Vinayak Potdar • Built with passion
-    </div>
-</section>
+.icons i:hover {
+    background: #38bdf8;
+    color: black;
+}
 
-<footer>
-    <p>© 2026 Vinayak Potdar | Data Analyst</p>
-</footer>
+.footer-text {
+    color: #b5b5b5;
+    font-size: 14px;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* EDUCATION */
+.education-section {
+    padding: 60px 10%;
+}
+
+.education-section h2 {
+    font-size: 30px;
+    color: #38bdf8;
+    text-align: center;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.edu-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.edu-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.edu-card .college,
+.edu-card .year,
+.edu-card .award {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+.edu-card ul {
+    padding-left: 20px;
+}
+
+.edu-card ul li {
+    margin-bottom: 10px;
+}
+
+/* ================= ANIMATED HOVER EFFECTS ================= */
+
+/* NAV LINKS HOVER LINE */
+nav ul li a {
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* BUTTON HOVER */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* SKILL CARD HOVER */
+.skill-card {
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.3);
+}
+
+/* SKILL ICON ANIMATION */
+.skill-card i {
+    transition: 0.4s;
+}
+
+.skill-card:hover i {
+    transform: rotate(12deg) scale(1.2);
+    color: #7dd3fc;
+}
+
+/* PROJECT CARD HOVER */
+.project-card {
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+}
+
+/* EDUCATION CARD HOVER */
+.edu-card {
+    transition: 0.4s;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+}
+
+/* SOCIAL ICONS HOVER */
+.icons i {
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.25) rotate(10deg);
+    box-shadow: 0 0 20px #38bdf8;
+}
