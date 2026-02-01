@@ -229,23 +229,56 @@ nav ul li a {
 
 
 /* CONTACT */
-.contact-section {
+/* CONTACT VIDEO SECTION */
+.contact-video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 60px 20px;
-    background: #020617;
 }
 
-.contact-section h2 {
-    font-size: 32px;
-    letter-spacing: 2px;
+/* Background Video */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
 }
 
-.contact-section p {
-    color: #cfcfcf;
+/* Dark Overlay */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.75);
+    z-index: -1;
+}
+
+/* Content */
+.contact-content {
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.contact-content p {
+    margin: 20px 0 35px;
     font-size: 18px;
-    margin-bottom: 30px;
+    color: #cbd5f5;
 }
 
+/* Icons */
 .icons {
     display: flex;
     justify-content: center;
@@ -254,30 +287,24 @@ nav ul li a {
 }
 
 .icons i {
-    font-size: 26px;
-    color: white;
-    background: #111827;
-    padding: 15px;
+    font-size: 24px;
+    background: rgba(255,255,255,0.1);
+    padding: 18px;
     border-radius: 50%;
+    color: white;
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .icons i:hover {
     background: #38bdf8;
-    color: black;
+    color: #020617;
+    transform: scale(1.2);
 }
 
+/* Footer text */
 .footer-text {
-    color: #b5b5b5;
     font-size: 14px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
+    color: #cbd5f5;
 }
 
 /* EDUCATION */
