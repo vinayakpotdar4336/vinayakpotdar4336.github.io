@@ -159,6 +159,13 @@ nav ul li a {
     color: #e5e7eb;
 }
 
+.underline {
+    width: 120px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 10px auto 40px;
+}
+
 .carousel {
     display: flex;
     gap: 20px;
