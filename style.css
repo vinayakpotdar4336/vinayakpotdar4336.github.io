@@ -151,7 +151,15 @@ nav ul li a {
 }
 
 /* PROJECTS */
+.projects-section {
+    padding: 60px 10%;
+}
 
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
 .projects-section {
     position: relative;
     padding: 40px 20px;
@@ -165,6 +173,7 @@ nav ul li a {
     background: #38bdf8;
     margin: 10px auto 40px;
 }
+
 
 .carousel {
     display: flex;
