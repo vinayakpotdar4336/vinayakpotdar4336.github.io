@@ -410,32 +410,3 @@ nav ul li a:hover::after {
 
 /* Smoke */
 
-body {
-    margin: 0;
-    height: 100vh;
-    background: #111;
-    overflow: hidden;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-}
-
-.smoke {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(6px);
-    animation: smokeAnim 1.2s ease-out forwards;
-}
-
-@keyframes smokeAnim {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(4) translateY(-50px);
-        opacity: 0;
-    }
-}
