@@ -1,59 +1,68 @@
 // Optional JavaScript
 console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
-// Project 
+// ================= PROJECT CAROUSEL =================
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
 
 function getCardWidth() {
     const card = document.querySelector('.project-card');
-    const style = window.getComputedStyle(card);
+    if (!card) return 0;
     const gap = 20; // same as CSS gap
     return card.offsetWidth + gap;
 }
 
-nextBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-});
+if (nextBtn && prevBtn && carousel) {
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
 
-prevBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-});
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
+}
 
-// smoke
-// Neon colors array
+// ================= SMOKE EFFECT =================
+
+// Neon colors
 const colors = ['#00ffff', '#ff00ff', '#ff007f', '#00ff7f', '#ffbf00'];
 
 function createSmoke(x, y) {
-    const count = 5; // particles per click
-    for(let i=0; i<count; i++){
-        let smoke = document.createElement('div');
+    const count = 4; // particles (portfolio friendly)
+    for (let i = 0; i < count; i++) {
+        const smoke = document.createElement('div');
         smoke.className = 'smoke';
 
-        // random neon color
-        smoke.style.background = colors[Math.floor(Math.random() * colors.length)];
+        smoke.style.background =
+            colors[Math.floor(Math.random() * colors.length)];
 
-        // random offset for natural look
         smoke.style.left = x + Math.random() * 20 - 10 + 'px';
         smoke.style.top = y + Math.random() * 20 - 10 + 'px';
 
-        // random size
         const size = Math.random() * 10 + 10;
         smoke.style.width = size + 'px';
         smoke.style.height = size + 'px';
 
         document.body.appendChild(smoke);
 
-        // remove after animation
         smoke.addEventListener('animationend', () => smoke.remove());
     }
 }
 
-// click smoke
+// Click smoke
+document.addEventListener('click', (e) => {
+    createSmoke(e.clientX, e.clientY);
+});
 
+// Mouse move trail (throttled)
+let trailTimeout = null;
+document.addEventListener('mousemove', (e) => {
+    if (trailTimeout) return;
 
-// Optional: Auto-scroll every 5 seconds
-// setInterval(() => {
-//     carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
-// }, 5000);
+    createSmoke(e.clientX, e.clientY);
+
+    trailTimeout = setTimeout(() => {
+        trailTimeout = null;
+    }, 80); // smooth + performance safe
+});
