@@ -433,9 +433,18 @@ nav ul li a:hover::after {
     }
 }
 /* video */
+/* GIF / VIDEO FIX */
+.intro-gif {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
 
 .intro-gif img {
-    width: 70%;
-    height: 100px;      /* small GIF size */
-    object-fit: cover;
+    width: 260px;        /* ✅ controlled size */
+    max-width: 90%;
+    height: auto;        /* ✅ aspect ratio correct */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
