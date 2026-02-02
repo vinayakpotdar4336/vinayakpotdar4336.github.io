@@ -435,7 +435,7 @@ nav ul li a:hover::after {
 
 /* GIF / VIDEO FIX */
 .intro-gif img {
-    width: 8000px;       /* ⬅️ width इथे वाढव */
+    width: 10000px;       /* ⬅️ width इथे वाढव */
     height: 1000px;       /* aspect ratio safe */
     max-width: 100%;
     border-radius: 15px;
