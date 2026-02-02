@@ -15,6 +15,13 @@
 
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,14 +54,14 @@
         <a href="https://linkedin.com" class="btn outline">LinkedIn</a>
     </div>
 </section>
-    
+
 <!-- video -->
 <div class="intro-gif" data-aos="fade-up">
     <img src="video.gif" alt="Intro Animation">
 </div>
 
 <!-- Technical  SKILLS -->
-<section class="skills-section" data-aos="fade-up">
+<section id="skills" class="skills-section" data-aos="fade-up">
     <h2>TECHNICAL SKILLS</h2>
     <div class="underline"></div>
 
@@ -83,7 +90,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section class="projects-section" data-aos="fade-up">
+<section id="projects" class="projects-section" data-aos="fade-up">
     <h2>KEY PROJECTS</h2>
     <div class="underline"></div>
     <p class="note">All Project Info</p>
@@ -126,7 +133,6 @@
     <h2 class="section-title">My Experience</h2>
 
     <div class="timeline">
-        <!-- Experience 1 -->
         <div class="timeline-item" data-aos="fade-right">
             <div class="timeline-dot gradient-dot"></div>
             <div class="timeline-content">
@@ -141,7 +147,6 @@
             </div>
         </div>
 
-        <!-- Experience 2 -->
         <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-dot gradient-dot"></div>
             <div class="timeline-content">
@@ -228,5 +233,6 @@
     once: true
   });
 </script>
+
 </body>
 </html>
