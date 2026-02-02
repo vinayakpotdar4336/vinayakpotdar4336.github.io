@@ -173,7 +173,7 @@ nav ul li a {
 }
 
 .project-card {
-    min-width: 100px;
+    min-width: 50px;
     background: #112240;
     border-radius: 12px;
     overflow: hidden;
@@ -442,7 +442,6 @@ nav ul li a:hover::after {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* EXPERIENCE SECTION */
 /* EXPERIENCE TIMELINE */
 .experience-section {
     padding: 80px 10%;
@@ -590,7 +589,7 @@ html {
 
 /* IMAGE */
 .side-image img {
-    width: 50px;
+    width: 80px;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
     transition: transform 0.4s ease;
