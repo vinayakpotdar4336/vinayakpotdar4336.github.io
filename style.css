@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 .intro-gif img {
-    width: 280px;     /* control GIF size */
+    width: 200px;     /* control GIF size */
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
