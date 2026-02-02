@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -158,14 +159,6 @@ nav ul li a {
     color: #e5e7eb;
 }
 
-.underline {
-    width: 120px;
-    height: 4px;
-    background: #38bdf8;
-    margin: 10px auto 40px;
-}
-
-
 .carousel {
     display: flex;
     gap: 20px;
@@ -189,7 +182,6 @@ nav ul li a {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
 
 .project-card:hover {
     transform: scale(1.05);
@@ -439,15 +431,4 @@ nav ul li a:hover::after {
         transform: scale(4) translateY(-50px);
         opacity: 0;
     }
-}
-.intro-gif {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.intro-gif img {
-    width: 280px;     /* control GIF size */
-    border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
