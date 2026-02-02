@@ -173,7 +173,7 @@ nav ul li a {
 }
 
 .project-card {
-    min-width: 260px;
+    min-width: 100px;
     background: #112240;
     border-radius: 12px;
     overflow: hidden;
@@ -188,7 +188,7 @@ nav ul li a {
 }
 
 .project-card img {
-    width: 100%;
+    width: 50%;
     display: block;
 }
 
