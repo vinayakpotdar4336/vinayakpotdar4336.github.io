@@ -432,19 +432,14 @@ nav ul li a:hover::after {
         opacity: 0;
     }
 }
-/* video */
-/* GIF / VIDEO FIX */
-.intro-gif {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-}
 
+/* GIF / VIDEO FIX */
 .intro-gif img {
-    width: 260px;        /* ✅ controlled size */
-    max-width: 90%;
-    height: auto;        /* ✅ aspect ratio correct */
+    width: 380px;       /* ⬅️ width इथे वाढव */
+    height: auto;       /* aspect ratio safe */
+    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
 
