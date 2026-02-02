@@ -180,11 +180,15 @@ nav ul li a {
     display: none; /* hide scrollbar */
 }
 
-.project-card img {
-    width: 90%;
-    height: 120px;
-    margin: 10px auto;
-    object-fit: contain;
+.project-card {
+    min-width: 100px;
+    background: #112240;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
 
