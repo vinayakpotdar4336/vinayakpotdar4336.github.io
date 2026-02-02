@@ -590,7 +590,7 @@ html {
 
 /* IMAGE */
 .side-image img {
-    width: 300px;
+    width: 100px;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
     transition: transform 0.4s ease;
