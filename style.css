@@ -125,3 +125,16 @@ nav ul li a {
     font-size: 24px;
     margin: 10px;
 }
+
+/* video */
+.intro-gif {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-gif img {
+    width: 280px;     /* control GIF size */
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
