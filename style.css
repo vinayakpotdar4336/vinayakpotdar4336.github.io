@@ -432,3 +432,10 @@ nav ul li a:hover::after {
         opacity: 0;
     }
 }
+/* video */
+
+.intro-gif img {
+    width: 100%;
+    height: 130px;      /* small GIF size */
+    object-fit: cover;
+}
