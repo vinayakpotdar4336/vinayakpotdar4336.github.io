@@ -187,11 +187,13 @@ nav ul li a {
   overflow: hidden;
   width: 100%;
 }
-
 .projects-track {
   display: flex;
   gap: 24px;
-  will-change: transform;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
 }
 
 /* ===============================
@@ -432,15 +434,7 @@ nav ul li a:hover::after {
     color: #7dd3fc;
 }
 
-/* PROJECT CARD HOVER */
-.project-card {
-    transition: 0.4s;
-}
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
-}
 
 /* EDUCATION CARD HOVER */
 .edu-card {
@@ -579,8 +573,8 @@ nav ul li a:hover::after {
 
 /* Company Logo */
 .company-logo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 70px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
