@@ -1,28 +1,103 @@
 // Optional JavaScript
 console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
-// ================= PROJECT CAROUSEL =================
-const carousel = document.querySelector('.carousel');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
+/* ================================
+   PROJECT MODAL SYSTEM
+================================ */
 
-function getCardWidth() {
-    const card = document.querySelector('.project-card');
-    if (!card) return 0;
-    const gap = 20; // same as CSS gap
-    return card.offsetWidth + gap;
+const modal = document.getElementById("modal");
+const modalBody = document.getElementById("modal-body");
+let lastFocused = null;
+
+const projectData = {
+  kirby: `
+    <h3>Kirby – IAQ Sensor</h3>
+    <img src="assets/Kirby-0.png">
+    <p>Industrial Air Quality Monitoring Device</p>
+  `,
+  ultra: `
+    <h3>Ultra Paws – Pet Wearable</h3>
+    <img src="assets/Ultrapaws-0.png">
+    <p>Pet health tracking wearable</p>
+  `,
+  rail: `
+    <h3>Railway Coupling Controller</h3>
+    <img src="assets/rail-1.png">
+    <p>Automatic railway coupling system</p>
+  `
+};
+
+function openModal(key) {
+  if (!projectData[key]) return;
+  lastFocused = document.activeElement;
+  modalBody.innerHTML = projectData[key];
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 }
 
-if (nextBtn && prevBtn && carousel) {
-    nextBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-    });
-
-    prevBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-    });
+function closeModal() {
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+  if (lastFocused) lastFocused.focus();
 }
 
+document.querySelectorAll(".project-card").forEach(card => {
+  card.addEventListener("click", () => {
+    openModal(card.dataset.modal);
+  });
+});
+
+document.querySelector(".modal .close")?.addEventListener("click", closeModal);
+window.addEventListener("click", e => {
+  if (e.target === modal) closeModal();
+});
+window.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeModal();
+});
+
+
+/* ================================
+   PROJECT CAROUSEL (AUTO + BUTTON)
+================================ */
+
+const section = document.getElementById("projects");
+const viewport = section.querySelector(".projects-viewport");
+const track = section.querySelector(".projects-track");
+const btnLeft = section.querySelector(".carousel-btn.left");
+const btnRight = section.querySelector(".carousel-btn.right");
+
+if (viewport && track) {
+
+  let index = 0;
+  const gap = 24;
+  const cards = Array.from(track.children);
+
+  function cardWidth() {
+    return cards[0].offsetWidth + gap;
+  }
+
+  function move(step) {
+    index += step;
+    if (index < 0) index = cards.length - 1;
+    if (index >= cards.length) index = 0;
+
+    viewport.scrollTo({
+      left: index * cardWidth(),
+      behavior: "smooth"
+    });
+  }
+
+  btnRight?.addEventListener("click", () => move(1));
+  btnLeft?.addEventListener("click", () => move(-1));
+
+  // Auto scroll
+  let auto = setInterval(() => move(1), 2500);
+
+  section.addEventListener("mouseenter", () => clearInterval(auto));
+  section.addEventListener("mouseleave", () => {
+    auto = setInterval(() => move(1), 2500);
+  });
+}
 // ================= SMOKE EFFECT =================
 
 // Neon colors
