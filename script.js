@@ -89,14 +89,3 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Animated Video //
-
-const robot = document.getElementById("robot");
-
-robot.addEventListener("mouseenter", () => {
-  document.querySelector(".arm.right").style.animationDuration = "0.6s";
-});
-
-robot.addEventListener("mouseleave", () => {
-  document.querySelector(".arm.right").style.animationDuration = "2s";
-});
