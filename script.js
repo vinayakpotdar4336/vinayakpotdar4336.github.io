@@ -1,103 +1,70 @@
 // Optional JavaScript
 console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
-/* ================================
-   PROJECT MODAL SYSTEM
+
+/* ===============================
+   PROJECT MODAL DATA
 ================================ */
 
 const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
-let lastFocused = null;
 
 const projectData = {
-  kirby: `
-    <h3>Kirby – IAQ Sensor</h3>
-    <img src="assets/Kirby-0.png">
-    <p>Industrial Air Quality Monitoring Device</p>
-  `,
-  ultra: `
-    <h3>Ultra Paws – Pet Wearable</h3>
-    <img src="assets/Ultrapaws-0.png">
-    <p>Pet health tracking wearable</p>
-  `,
-  rail: `
-    <h3>Railway Coupling Controller</h3>
-    <img src="assets/rail-1.png">
-    <p>Automatic railway coupling system</p>
-  `
+  kirby: "<h3>Kirby – IAQ Sensor</h3><p>nRF52840 • Zephyr RTOS • BLE + LoRa</p>",
+  ultra: "<h3>Ultra Paws</h3><p>Pet Health Wearable • BLE</p>",
+  rail: "<h3>Railway Coupling Controller</h3>",
+  heater: "<h3>Heater + Peltier Controller</h3>",
+  test: "<h3>Automated Test Fixture</h3>",
+  ev: "<h3>EV Charging Station Controller</h3>",
+  tracker: "<h3>Tracker Control Unit</h3>",
+  ulp: "<h3>ULP Pressure Sensor Node</h3>"
 };
 
-function openModal(key) {
-  if (!projectData[key]) return;
-  lastFocused = document.activeElement;
-  modalBody.innerHTML = projectData[key];
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-
-function closeModal() {
-  modal.style.display = "none";
-  document.body.style.overflow = "";
-  if (lastFocused) lastFocused.focus();
-}
+/* ===============================
+   OPEN / CLOSE MODAL
+================================ */
 
 document.querySelectorAll(".project-card").forEach(card => {
   card.addEventListener("click", () => {
-    openModal(card.dataset.modal);
+    modalBody.innerHTML = projectData[card.dataset.modal];
+    modal.style.display = "flex";
   });
 });
 
-document.querySelector(".modal .close")?.addEventListener("click", closeModal);
-window.addEventListener("click", e => {
-  if (e.target === modal) closeModal();
-});
-window.addEventListener("keydown", e => {
-  if (e.key === "Escape") closeModal();
-});
+document.querySelector(".close").onclick = () => {
+  modal.style.display = "none";
+};
 
+window.onclick = e => {
+  if (e.target === modal) modal.style.display = "none";
+};
 
-/* ================================
-   PROJECT CAROUSEL (AUTO + BUTTON)
+/* ===============================
+   CAROUSEL LOGIC
 ================================ */
 
-const section = document.getElementById("projects");
-const viewport = section.querySelector(".projects-viewport");
-const track = section.querySelector(".projects-track");
-const btnLeft = section.querySelector(".carousel-btn.left");
-const btnRight = section.querySelector(".carousel-btn.right");
+const track = document.querySelector(".projects-track");
+const viewport = document.querySelector(".projects-viewport");
+const btnLeft = document.querySelector(".carousel-btn.left");
+const btnRight = document.querySelector(".carousel-btn.right");
 
-if (viewport && track) {
+let index = 0;
+const gap = 24;
 
-  let index = 0;
-  const gap = 24;
-  const cards = Array.from(track.children);
-
-  function cardWidth() {
-    return cards[0].offsetWidth + gap;
-  }
-
-  function move(step) {
-    index += step;
-    if (index < 0) index = cards.length - 1;
-    if (index >= cards.length) index = 0;
-
-    viewport.scrollTo({
-      left: index * cardWidth(),
-      behavior: "smooth"
-    });
-  }
-
-  btnRight?.addEventListener("click", () => move(1));
-  btnLeft?.addEventListener("click", () => move(-1));
-
-  // Auto scroll
-  let auto = setInterval(() => move(1), 2500);
-
-  section.addEventListener("mouseenter", () => clearInterval(auto));
-  section.addEventListener("mouseleave", () => {
-    auto = setInterval(() => move(1), 2500);
-  });
+function cardWidth() {
+  return track.children[0].offsetWidth + gap;
 }
+
+btnRight.onclick = () => {
+  index++;
+  viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
+};
+
+btnLeft.onclick = () => {
+  index = Math.max(index - 1, 0);
+  viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
+};
+
 // ================= SMOKE EFFECT =================
 
 // Neon colors
