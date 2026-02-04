@@ -191,7 +191,8 @@ nav ul li a {
 .projects-track {
   display: flex;
   gap: 24px;
-  will-change: transform;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 /* ===============================
