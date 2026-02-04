@@ -1,29 +1,68 @@
 // Optional JavaScript
 console.log("Vinayak Potdar Portfolio Loaded Successfully");
 
-// ================= PROJECT CAROUSEL =================
-const carousel = document.querySelector('.carousel');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
+/* ===============================
+   PROJECT MODAL DATA
+================================ */
 
-function getCardWidth() {
-    const card = document.querySelector('.project-card');
-    if (!card) return 0;
-    const gap = 20; // same as CSS gap
-    return card.offsetWidth + gap;
+const modal = document.getElementById("modal");
+const modalBody = document.getElementById("modal-body");
+
+const projectData = {
+  kirby: "<h3>Kirby – IAQ Sensor</h3><p>nRF52840 • Zephyr RTOS • BLE + LoRa</p>",
+  ultra: "<h3>Ultra Paws</h3><p>Pet Health Wearable • BLE</p>",
+  rail: "<h3>Railway Coupling Controller</h3>",
+  heater: "<h3>Heater + Peltier Controller</h3>",
+  test: "<h3>Automated Test Fixture</h3>",
+  ev: "<h3>EV Charging Station Controller</h3>",
+  tracker: "<h3>Tracker Control Unit</h3>",
+  ulp: "<h3>ULP Pressure Sensor Node</h3>"
+};
+
+/* ===============================
+   OPEN / CLOSE MODAL
+================================ */
+
+document.querySelectorAll(".project-card").forEach(card => {
+  card.addEventListener("click", () => {
+    modalBody.innerHTML = projectData[card.dataset.modal];
+    modal.style.display = "flex";
+  });
+});
+
+document.querySelector(".close").onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = e => {
+  if (e.target === modal) modal.style.display = "none";
+};
+
+/* ===============================
+   CAROUSEL LOGIC
+================================ */
+
+const track = document.querySelector(".projects-track");
+const viewport = document.querySelector(".projects-viewport");
+const btnLeft = document.querySelector(".carousel-btn.left");
+const btnRight = document.querySelector(".carousel-btn.right");
+
+let index = 0;
+const gap = 24;
+
+function cardWidth() {
+  return track.children[0].offsetWidth + gap;
 }
 
-if (nextBtn && prevBtn && carousel) {
-    nextBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-    });
+btnRight.onclick = () => {
+  index++;
+  viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
+};
 
-    prevBtn.addEventListener('click', () => {
-        carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-    });
-}
-
-// ================= SMOKE EFFECT =================
+btnLeft.onclick = () => {
+  index = Math.max(index - 1, 0);
+  viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
+};
 
 // Neon colors
 const colors = ['#00ffff', '#ff00ff', '#ff007f', '#00ff7f', '#ffbf00'];
