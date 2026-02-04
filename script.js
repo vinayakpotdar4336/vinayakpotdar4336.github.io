@@ -9,15 +9,112 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 const projectData = {
-  kirby: "<h3>Kirby – IAQ Sensor</h3><p>nRF52840 • Zephyr RTOS • BLE + LoRa</p>",
-  ultra: "<h3>Ultra Paws</h3><p>Pet Health Wearable • BLE</p>",
-  rail: "<h3>Railway Coupling Controller</h3>",
-  heater: "<h3>Heater + Peltier Controller</h3>",
-  test: "<h3>Automated Test Fixture</h3>",
-  ev: "<h3>EV Charging Station Controller</h3>",
-  tracker: "<h3>Tracker Control Unit</h3>",
-  ulp: "<h3>ULP Pressure Sensor Node</h3>"
+
+  kirby: `
+    <img src="images/kirby.png" class="project-modal-img" />
+    <h3>Kirby – IAQ Sensor</h3>
+    <p><strong>Tech:</strong> nRF52840 • Zephyr RTOS • BLE + LoRa</p>
+    <ul>
+      <li>Industrial air quality monitoring solution</li>
+      <li>Low power embedded firmware design</li>
+      <li>BLE + LoRa dual communication</li>
+      <li>Real-time sensor data processing</li>
+      <li>Optimized battery performance</li>
+    </ul>
+  `,
+
+  ultra: `
+    <img src="images/ultra.png" class="project-modal-img" />
+    <h3>Ultra Paws – Pet Wearable</h3>
+    <p><strong>Tech:</strong> BLE • Embedded Systems</p>
+    <ul>
+      <li>Pet activity & health tracking</li>
+      <li>Custom BLE GATT services</li>
+      <li>Low power wearable firmware</li>
+      <li>Compact hardware integration</li>
+      <li>Mobile app connectivity support</li>
+    </ul>
+  `,
+
+  rail: `
+    <img src="images/rail.png" class="project-modal-img" />
+    <h3>Railway Coupling Controller</h3>
+    <p><strong>Domain:</strong> Industrial Automation</p>
+    <ul>
+      <li>Automatic coupling control logic</li>
+      <li>Safety-focused embedded design</li>
+      <li>Sensor-based detection system</li>
+      <li>Real-time status monitoring</li>
+      <li>Reliable field deployment</li>
+    </ul>
+  `,
+
+  heater: `
+    <img src="images/heater.png" class="project-modal-img" />
+    <h3>Heater + Peltier Controller</h3>
+    <p><strong>Tech:</strong> Embedded C • PID Control</p>
+    <ul>
+      <li>Temperature control system</li>
+      <li>Heater and Peltier integration</li>
+      <li>PID-based regulation logic</li>
+      <li>Energy efficient operation</li>
+      <li>Industrial-grade stability</li>
+    </ul>
+  `,
+
+  test: `
+    <img src="images/test.png" class="project-modal-img" />
+    <h3>Automated Test Fixture</h3>
+    <p><strong>Tech:</strong> Embedded Testing</p>
+    <ul>
+      <li>Automated hardware testing setup</li>
+      <li>Reduced manual testing effort</li>
+      <li>Accurate result validation</li>
+      <li>Improved production efficiency</li>
+      <li>Error detection automation</li>
+    </ul>
+  `,
+
+  ev: `
+    <img src="images/ev.png" class="project-modal-img" />
+    <h3>EV Charging Station Controller</h3>
+    <p><strong>Tech:</strong> Embedded Systems • Power Electronics</p>
+    <ul>
+      <li>Smart EV charging logic</li>
+      <li>Power management control</li>
+      <li>Safety and fault detection</li>
+      <li>Energy monitoring features</li>
+      <li>Scalable charging solution</li>
+    </ul>
+  `,
+
+  tracker: `
+    <img src="images/tracker.png" class="project-modal-img" />
+    <h3>Tracker Control Unit</h3>
+    <p><strong>Tech:</strong> GPS • IoT</p>
+    <ul>
+      <li>Real-time location tracking</li>
+      <li>Low power IoT device</li>
+      <li>Wireless data transmission</li>
+      <li>Compact embedded design</li>
+      <li>Field-tested reliability</li>
+    </ul>
+  `,
+
+  ulp: `
+    <img src="images/ulp.png" class="project-modal-img" />
+    <h3>ULP Pressure Sensor Node</h3>
+    <p><strong>Tech:</strong> Ultra Low Power • Sensors</p>
+    <ul>
+      <li>Ultra low power sensor node</li>
+      <li>Long battery life design</li>
+      <li>Accurate pressure measurement</li>
+      <li>Wireless sensor communication</li>
+      <li>Ideal for remote deployments</li>
+    </ul>
+  `
 };
+
 
 /* ===============================
    OPEN / CLOSE MODAL
