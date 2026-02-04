@@ -173,7 +173,7 @@ nav ul li a {
 }
 
 .project-card {
-    min-width: 50px;
+    min-width: 30px;
     background: #112240;
     border-radius: 12px;
     overflow: hidden;
