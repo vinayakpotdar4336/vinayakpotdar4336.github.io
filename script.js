@@ -65,6 +65,35 @@ btnLeft.onclick = () => {
   viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
 };
 
+
+// ===== AUTO SCROLL PROJECTS CAROUSEL =====
+const track = document.querySelector('.projects-track');
+
+let scrollSpeed = 0.5; // speed control
+let autoScrollId;
+
+function startAutoScroll() {
+    autoScrollId = setInterval(() => {
+        track.scrollLeft += scrollSpeed;
+
+        // end ला पोहोचल्यावर पुन्हा start
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth) {
+            track.scrollLeft = 0;
+        }
+    }, 20);
+}
+
+function stopAutoScroll() {
+    clearInterval(autoScrollId);
+}
+
+// start auto scroll
+startAutoScroll();
+
+// hover केल्यावर थांबेल (UX better)
+track.addEventListener('mouseenter', stopAutoScroll);
+track.addEventListener('mouseleave', startAutoScroll);
+
 // ================= SMOKE EFFECT =================
 
 // Neon colors
