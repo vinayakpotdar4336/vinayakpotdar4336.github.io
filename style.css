@@ -152,81 +152,190 @@ nav ul li a {
 
 /* PROJECTS */
 
-.projects-section {
-    position: relative;
-    padding: 40px 20px;
-    background: #0a192f;
-    color: #e5e7eb;
+PROJECTS — PREMIUM VERSION
+============================================ */
+#projects, #experience {
+  background: var(--cream); /* full section background */
+  padding: 4rem 0;           /* adjust spacing like other sections */
 }
 
-.carousel {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 0;
+.projects-grid {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:1.6rem;
+  margin-top:1rem;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none; /* hide scrollbar */
+@media (max-width:900px) { 
+  .projects-grid { grid-template-columns:1fr; } 
 }
 
 .project-card {
-    min-width: 30px;
-    background: #112240;
-    border-radius: 12px;
-    overflow: hidden;
-    flex-shrink: 0;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  padding:1rem;
+  cursor:pointer;
+  transition: transform .25s var(--ease);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .project-card img {
-    width: 50%;
-    display: block;
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.project-card h3 {
-    margin: 10px;
-    font-size: 16px;
-    color: #38bdf8;
+
+.project-card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 20px 50px rgba(0,0,0,0.12);
 }
 
-/* Carousel Buttons */
+/* ============================================
+   UPDATED SECTION HEADINGS — PREMIUM STYLE
+============================================ */
+
+/* Applies to Technical Skills, Projects, Work Experience, Education, Achievements */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--dark);
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: .4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ============================================
+   PROJECTS — HORIZONTAL SCROLL (IMAGE-DRIVEN)
+============================================ */
+
+/* Outer scroll area */
+.projects-scroll {
+  position: relative;
+  height: 120vh; /* controls scroll duration */
+  overflow: hidden;
+}
+
+/* Sticky track */
+.projects-track {
+  position: sticky;
+  top: 110px; /* below navbar */
+  display: flex;
+  gap: 24px;
+  padding: 20px 5vw;
+  will-change: transform;
+}
+
+/* Card sizing: IMAGE DEFINES WIDTH */
+.projects-track .project-card {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Image-driven width */
+.projects-track .project-card img {
+  height: 240px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.projects-track .project-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Disable grid behavior if any */
+.projects-track {
+  grid: none !important;
+}
+
+/* ============================================
+   PROJECTS — HORIZONTAL AUTO SCROLL CAROUSEL
+============================================ */
+
+.projects-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.projects-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.projects-track {
+  display: flex;
+  gap: 24px;
+  will-change: transform;
+}
+
+/* Image-driven card sizing */
+.projects-track .project-card {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.projects-track .project-card img {
+  height: 220px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Arrow buttons */
 .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(56,189,248,0.8);
-    border: none;
-    color: #020617;
-    font-size: 24px;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
+  background: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
 }
 
 .carousel-btn:hover {
-    background: #38bdf8;
-    color: #fff;
+  transform: scale(1.1);
 }
 
+.carousel-btn:focus-visible {
+  outline: 3px solid rgba(255,109,31,0.4);
+}
 
+/* Mobile */
+@media (max-width: 600px) {
+  .carousel-btn {
+    display: none;
+  }
+}
 
 /* CONTACT */
 .contact-section {
