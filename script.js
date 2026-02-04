@@ -10,12 +10,12 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 const projectData = {
-  kirby: "<h3>Kirby – IAQ Sensor</h3><p>nRF52840 • Zephyr RTOS • BLE + LoRa</p>",
+  kirby: "<h3>Kirby – IAQ Senso</h3><p>nRF52840 • Zephyr RTOS • BLE + LoRa</p>",
   ultra: "<h3>Ultra Paws</h3><p>Pet Health Wearable • BLE</p>",
-  rail: "<h3>Railway Coupling Controller</h3>",
-  heater: "<h3>Heater + Peltier Controller</h3>",
-  test: "<h3>Automated Test Fixture</h3>",
-  ev: "<h3>EV Charging Station Controller</h3>",
+  rail: "<h3>Virat Kohli All Format Performance Dashboard</h3>",
+  heater: "<h3>SuperStore Sales DashBoard</h3>",
+  test: "<h3>Space Mission dashboard</h3>",
+  ev: "<h3>Ecommerce Sales Dashboard</h3>",
   tracker: "<h3>Tracker Control Unit</h3>",
   ulp: "<h3>ULP Pressure Sensor Node</h3>"
 };
