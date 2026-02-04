@@ -581,8 +581,8 @@ nav ul li a:hover::after {
 
 /* Company Logo */
 .company-logo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 70px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
