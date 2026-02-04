@@ -65,34 +65,67 @@ btnLeft.onclick = () => {
   viewport.scrollTo({ left: index * cardWidth(), behavior: "smooth" });
 };
 
+/* ===============================
+   PROJECTS AUTO SCROLL + BUTTONS
+================================ */
 
-// ===== AUTO SCROLL PROJECTS CAROUSEL =====
-const track = document.querySelector('.projects-track');
+const track = document.querySelector(".projects-track");
+const viewport = document.querySelector(".projects-viewport");
+const btnLeft = document.querySelector(".carousel-btn.left");
+const btnRight = document.querySelector(".carousel-btn.right");
 
-let scrollSpeed = 0.5; // speed control
-let autoScrollId;
+let index = 0;
+const gap = 24;
+let autoScroll;
 
+/* Card width */
+function cardWidth() {
+  return track.children[0].offsetWidth + gap;
+}
+
+/* Max index */
+function maxIndex() {
+  return track.children.length - 1;
+}
+
+/* Scroll function */
+function scrollToIndex() {
+  viewport.scrollTo({
+    left: index * cardWidth(),
+    behavior: "smooth"
+  });
+}
+
+/* Right button */
+btnRight.addEventListener("click", () => {
+  index = index >= maxIndex() ? 0 : index + 1;
+  scrollToIndex();
+});
+
+/* Left button */
+btnLeft.addEventListener("click", () => {
+  index = index <= 0 ? maxIndex() : index - 1;
+  scrollToIndex();
+});
+
+/* AUTO SCROLL */
 function startAutoScroll() {
-    autoScrollId = setInterval(() => {
-        track.scrollLeft += scrollSpeed;
-
-        // end ला पोहोचल्यावर पुन्हा start
-        if (track.scrollLeft + track.clientWidth >= track.scrollWidth) {
-            track.scrollLeft = 0;
-        }
-    }, 20);
+  autoScroll = setInterval(() => {
+    index = index >= maxIndex() ? 0 : index + 1;
+    scrollToIndex();
+  }, 3000); // speed (3 sec)
 }
 
 function stopAutoScroll() {
-    clearInterval(autoScrollId);
+  clearInterval(autoScroll);
 }
 
-// start auto scroll
-startAutoScroll();
+/* Pause on hover */
+viewport.addEventListener("mouseenter", stopAutoScroll);
+viewport.addEventListener("mouseleave", startAutoScroll);
 
-// hover केल्यावर थांबेल (UX better)
-track.addEventListener('mouseenter', stopAutoScroll);
-track.addEventListener('mouseleave', startAutoScroll);
+/* Start */
+startAutoScroll();
 
 // ================= SMOKE EFFECT =================
 
