@@ -11,7 +11,7 @@ const modalBody = document.getElementById("modal-body");
 const projectData = {
 
   kirby: `
-    <img src="vk.jpg" class="project-modal-img" />
+    <img src="images/vk.jpg" class="project-modal-img" />
     <h3>Kirby – IAQ Sensor</h3>
     <p><strong>Tech:</strong> nRF52840 • Zephyr RTOS • BLE + LoRa</p>
     <ul>
@@ -24,7 +24,7 @@ const projectData = {
   `,
 
   ultra: `
-    <img src="sss.jpg" class="project-modal-img" />
+    <img src="images/sss.jpg" class="project-modal-img" />
     <h3>Ultra Paws – Pet Wearable</h3>
     <p><strong>Tech:</strong> BLE • Embedded Systems</p>
     <ul>
@@ -37,7 +37,7 @@ const projectData = {
   `,
 
   rail: `
-    <img src="sm.jpg" class="project-modal-img" />
+    <img src="images/sm.jpg" class="project-modal-img" />
     <h3>Railway Coupling Controller</h3>
     <p><strong>Domain:</strong> Industrial Automation</p>
     <ul>
