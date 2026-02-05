@@ -246,7 +246,7 @@ nav ul li a {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .carousel-btn {
     display: none;
   }
