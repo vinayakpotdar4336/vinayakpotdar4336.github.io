@@ -9,20 +9,7 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 const projectData = {
-
-  kirby: `
-    <img src="vk.jpg" class="project-modal-img" />
-    <h3>Kirby – IAQ Sensor</h3>
-    <p><strong>Tech:</strong> nRF52840 • Zephyr RTOS • BLE + LoRa</p>
-    <ul>
-      <li>Industrial air quality monitoring solution</li>
-      <li>Low power embedded firmware design</li>
-      <li>BLE + LoRa dual communication</li>
-      <li>Real-time sensor data processing</li>
-      <li>Optimized battery performance</li>
-    </ul>
-  `,
-
+   
   ultra: `
     <img src="sss.jpg" class="project-modal-img" />
     <h3>Ultra Paws – Pet Wearable</h3>
