@@ -89,7 +89,7 @@ const projectData = {
   `,
 
   ulp: `
-    <img src="images/ulp.png" class="project-modal-img" />
+    <img src="vk.jpg" class="project-modal-img" />
     <h3>ULP Pressure Sensor Node</h3>
     <p><strong>Tech:</strong> Ultra Low Power • Sensors</p>
     <ul>
