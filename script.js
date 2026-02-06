@@ -12,66 +12,77 @@ const projectData = {
    
   ultra: `
     <img src="sss.jpg" class="project-modal-img" />
-    <h3>Ultra Paws – Pet Wearable</h3>
-    <p><strong>Tech:</strong> BLE • Embedded Systems</p>
+    <h3>Shows overall SuperStore Data Summary</h3>
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
     <ul>
-      <li>Pet activity & health tracking</li>
-      <li>Custom BLE GATT services</li>
-      <li>Low power wearable firmware</li>
-      <li>Compact hardware integration</li>
-      <li>Mobile app connectivity support</li>
+      <li>Shows overall sales, profit, and quantity summary</li>
+      <li>Displays year-wise sales analysis</li>
+      <li>Analyzes total sales by state</li>
+      <li>Compares sales distribution by region</li>
+      <li>Shows country-wise sales on map</li>
+      <li>Tracks sales by ship mode, segment, and category</li>
+      <li>Provides customer-wise sales and quantity details</li>
+      <li>Includes interactive filters for deeper analysis</li>
     </ul>
   `,
 
   rail: `
     <img src="sm.jpg" class="project-modal-img" />
-    <h3>Railway Coupling Controller</h3>
-    <p><strong>Domain:</strong> Industrial Automation</p>
+    <h3>Shows overall space mission launch statistics</h3>
+    <p><strong>Tech:</strong> • SQL • Power Bi</p>
     <ul>
-      <li>Automatic coupling control logic</li>
-      <li>Safety-focused embedded design</li>
-      <li>Sensor-based detection system</li>
-      <li>Real-time status monitoring</li>
-      <li>Reliable field deployment</li>
+      <li>Displays total launch count and success rate</li>
+      <li>Analyzes mission status (success, failure, partial)</li>
+      <li>Shows year-wise mission success trends</li>
+      <li>Compares launch count by rocket type</li>
+      <li>Compares launch count by space agencies/companies</li>
+      <li>Allows filtering by rocket status and launch location</li>
+      <li>Uses a dark, space-themed analytics dashboard design</li>
     </ul>
   `,
 
   heater: `
     <img src="ecs.jpg" class="project-modal-img" />
-    <h3>Heater + Peltier Controller</h3>
-    <p><strong>Tech:</strong> Embedded C • PID Control</p>
+    <h3>Shows overall ecommerce sales performance summary</h3>
+    <p><strong>Tech:</strong> • Python • Power BI</p>
     <ul>
-      <li>Temperature control system</li>
-      <li>Heater and Peltier integration</li>
-      <li>PID-based regulation logic</li>
-      <li>Energy efficient operation</li>
-      <li>Industrial-grade stability</li>
+      <li>Displays key KPIs like total customers, quantity, and revenue</li>
+      <li>Tracks average order value and loyalty points</li>
+      <li>Analyzes delivery days by gender</li>
+      <li>Shows returns based on shipping mode</li>
+      <li>Compares sales by product category</li>
+      <li>Analyzes payment methods with loyalty and shipping mode</li>
+      <li>Provides filters for gender, location, age, and product category</li>
     </ul>
   `,
 
   test: `
     <img src="ipl.png" class="project-modal-img" />
-    <h3>Automated Test Fixture</h3>
-    <p><strong>Tech:</strong> Embedded Testing</p>
+    <h3>Displays overall IPL tournament analysis</h3>
+    <p><strong>Tech:</strong> • Tablue </p>
     <ul>
-      <li>Automated hardware testing setup</li>
-      <li>Reduced manual testing effort</li>
-      <li>Accurate result validation</li>
-      <li>Improved production efficiency</li>
-      <li>Error detection automation</li>
+      <li>Shows title-winning team details</li>
+      <li>Highlights Orange Cap (top run-scorer)</li>
+      <li>Highlights Purple Cap (top wicket-taker)</li>
+      <li>Shows total 4s and 6s in the tournament</li>
+      <li>Analyzes matches won based on toss decision</li>
+      <li>Compares bat vs field winning percentage</li>
+      <li>Allows season-wise filtering for analysis</li>
     </ul>
   `,
 
   ev: `
     <img src="cca.png" class="project-modal-img" />
-    <h3>EV Charging Station Controller</h3>
-    <p><strong>Tech:</strong> Embedded Systems • Power Electronics</p>
+    <h3>Shows overall customer churn analysis summary</h3>
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
     <ul>
-      <li>Smart EV charging logic</li>
-      <li>Power management control</li>
-      <li>Safety and fault detection</li>
-      <li>Energy monitoring features</li>
-      <li>Scalable charging solution</li>
+      <li>Displays total customer count and key KPI's</li>
+      <li>Analyzes customer distribution by geography</li>
+      <li>Shows customer count by age groups</li>
+      <li>Compares customer count by gender</li>
+      <li>Analyzes churn based on number of products</li>
+      <li>Shows impact of credit card and active membership status</li>
+      <li>Provides detailed customer-level data table</li>
     </ul>
   `,
 
@@ -80,11 +91,13 @@ const projectData = {
     <h3>Tracker Control Unit</h3>
     <p><strong>Tech:</strong> GPS • IoT</p>
     <ul>
-      <li>Real-time location tracking</li>
-      <li>Low power IoT device</li>
-      <li>Wireless data transmission</li>
-      <li>Compact embedded design</li>
-      <li>Field-tested reliability</li>
+      <li>Displays average purchase amount</li>
+      <li>Shows average customer review rating</li>
+      <li>Analyzes subscription status distribution</li>
+      <li>Compares revenue by product category</li>
+      <li>Shows sales by product category</li>
+      <li>Analyzes revenue by age group</li>
+      <li>Includes filters for gender, category, and shipping type</li>
     </ul>
   `,
 
