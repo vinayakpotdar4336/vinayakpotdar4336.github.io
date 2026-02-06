@@ -11,7 +11,7 @@ const modalBody = document.getElementById("modal-body");
 const projectData = {
 
   kirby: `
-    <img src="vk.jpg" class class="project-modal-img" />
+    <img src="vk.jpg" class="project-modal-img" />
     <h3>Kirby – IAQ Sensor</h3>
     <p><strong>Tech:</strong> nRF52840 • Zephyr RTOS • BLE + LoRa</p>
     <ul>
