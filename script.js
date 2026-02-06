@@ -90,14 +90,16 @@ const projectData = {
 
   ulp: `
     <img src="vk.jpg" class="project-modal-img" />
-    <h3>ULP Pressure Sensor Node</h3>
-    <p><strong>Tech:</strong> Ultra Low Power • Sensors</p>
+    <h3>Shows Virat Kohli’s performance across formats</h3>
+    <p><strong>Tech:</strong> • Power BI • SQL</p>
     <ul>
-      <li>Ultra low power sensor node</li>
-      <li>Long battery life design</li>
-      <li>Accurate pressure measurement</li>
-      <li>Wireless sensor communication</li>
-      <li>Ideal for remote deployments</li>
+      <li>Displays total matches and runs</li>
+      <li>Highlights highest and lowest scores</li>
+      <li>Enables year-wise performance analysis</li>
+      <li>Compares runs against opponent teams</li>
+      <li>Shows scoring milestones (50s, 100s, 200s)</li>
+      <li>Analyzes ground-wise performance</li>
+      <li>Uses a clean, dark analytics dashboard design</li>
     </ul>
   `
 };
