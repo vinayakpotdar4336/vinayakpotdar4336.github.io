@@ -76,7 +76,7 @@ const projectData = {
   `,
 
   tracker: `
-    <img src="cbd.png" class="project-modal-img" />
+    <img src="cba.png" class="project-modal-img" />
     <h3>Tracker Control Unit</h3>
     <p><strong>Tech:</strong> GPS • IoT</p>
     <ul>
