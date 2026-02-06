@@ -89,7 +89,7 @@ const projectData = {
   tracker: `
     <img src="cba.png" class="project-modal-img" />
     <h3>Tracker Control Unit</h3>
-    <p><strong>Tech:</strong> GPS • IoT</p>
+    <p><strong>Tech:</strong> • Power BI • SQL</p>
     <ul>
       <li>Displays average purchase amount</li>
       <li>Shows average customer review rating</li>
