@@ -279,6 +279,7 @@ nav ul li a {
 
 .project-modal-img {
   width: 100%;
+  display: block;
   max-height: 280px;
   object-fit: cover;
   border-radius: 12px;
