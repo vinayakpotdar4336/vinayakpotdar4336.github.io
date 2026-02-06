@@ -37,7 +37,7 @@ const projectData = {
   `,
 
   heater: `
-    <img src="cba.png" class="project-modal-img" />
+    <img src="ecs.jpg" class="project-modal-img" />
     <h3>Heater + Peltier Controller</h3>
     <p><strong>Tech:</strong> Embedded C • PID Control</p>
     <ul>
@@ -50,7 +50,7 @@ const projectData = {
   `,
 
   test: `
-    <img src="images/test.png" class="project-modal-img" />
+    <img src="ipl.png" class="project-modal-img" />
     <h3>Automated Test Fixture</h3>
     <p><strong>Tech:</strong> Embedded Testing</p>
     <ul>
@@ -63,7 +63,7 @@ const projectData = {
   `,
 
   ev: `
-    <img src="images/ev.png" class="project-modal-img" />
+    <img src="cca.png" class="project-modal-img" />
     <h3>EV Charging Station Controller</h3>
     <p><strong>Tech:</strong> Embedded Systems • Power Electronics</p>
     <ul>
@@ -76,7 +76,7 @@ const projectData = {
   `,
 
   tracker: `
-    <img src="images/tracker.png" class="project-modal-img" />
+    <img src="cbd.png" class="project-modal-img" />
     <h3>Tracker Control Unit</h3>
     <p><strong>Tech:</strong> GPS • IoT</p>
     <ul>
