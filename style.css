@@ -84,15 +84,21 @@ nav ul li a {
 }
 
 /* TECHNICAL SKILLS */
-.section-title {
-  font-size: 36px;
-  font-weight: 800;
-  color: #38bdf8;
-  text-align: center;
-  margin: 0 auto 2rem auto;
-  display: block;
-  width: fit-content;
-  border-bottom: 3px solid #FF6D1F;
+.skills-section {
+    padding: 60px 10%;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.underline {
+    width: 120px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 10px auto 40px;
 }
 
 /* GRID */
