@@ -510,10 +510,14 @@ nav ul li a:hover::after {
 }
 
 .section-title {
-    text-align: center;
-    font-size: 36px;
-    color: #38bdf8;
-    margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #38bdf8;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;   /* 👈 center horizontally */
+  display: block;              /* 👈 important */
+  width: fit-content;          /* underline fits text */
+  border-bottom: 3px solid #FF6D1F;
 }
 
 /* Timeline Line */
