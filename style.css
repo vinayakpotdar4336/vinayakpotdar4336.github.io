@@ -89,8 +89,9 @@ nav ul li a {
 }
 
 .skills-section h2 {
-    font-size: 32px;
-    font-weight: bold;
+    text-align:center;
+    font-size: 36px;
+    font-weight: 800;
     color: #38bdf8;
 }
 
@@ -99,6 +100,8 @@ nav ul li a {
     height: 4px;
     background: #38bdf8;
     margin: 10px auto 40px;
+    width: fit-content;          /* underline fits text */
+    border-bottom: 3px solid #FF6D1F;
 }
 
 /* GRID */
