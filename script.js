@@ -114,7 +114,7 @@ const projectData = {
       <li>Analyzes ground-wise performance</li>
       <li>Uses a clean, dark analytics dashboard design</li>
     </ul>
-  `
+  `,
    sales: `
   <img src="ESA.jpg" class="project-modal-img" />
 
