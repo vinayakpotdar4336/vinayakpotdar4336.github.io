@@ -116,7 +116,7 @@ const projectData = {
     </ul>
   `
    sales: `
-  <img src="sales.jpg" class="project-modal-img" />
+  <img src="ESA.jpg" class="project-modal-img" />
 
   <h3>Sales Dashboard Analysis</h3>
 
