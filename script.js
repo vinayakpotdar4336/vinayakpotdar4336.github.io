@@ -115,6 +115,39 @@ const projectData = {
       <li>Uses a clean, dark analytics dashboard design</li>
     </ul>
   `
+   sales: `
+  <img src="sales.jpg" class="project-modal-img" />
+
+  <h3>Sales Dashboard Analysis</h3>
+
+  <p><strong>Tech:</strong> • SQL • Power BI • Excel</p>
+
+  <ul>
+    <li>Analyzed overall sales, profit, and customer trends</li>
+    <li>Created interactive dashboard with filters</li>
+    <li>Performed region-wise and category-wise analysis</li>
+    <li>Built KPI metrics for business insights</li>
+  </ul>
+
+  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+    
+    <a href="https://github.com/yourusername/project" target="_blank" 
+       style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+       🔗 GitHub
+    </a>
+
+    <a href="project.pdf" target="_blank" 
+       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+       📄 View PDF
+    </a>
+
+    <a href="#" target="_blank" 
+       style="padding:8px 14px; background:#f59e0b; color:#000; border-radius:6px; text-decoration:none;">
+       🌐 Live Demo
+    </a>
+
+  </div>
+`,
 };
 
 
