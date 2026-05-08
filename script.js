@@ -9,147 +9,212 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 const projectData = {
-   
+
   ultra: `
     <img src="sss.jpg" class="project-modal-img" />
-    <h3>Shows overall SuperStore Data Summary</h3>
+
+    <h3>SuperStore Sales Dashboard</h3>
+
     <p><strong>Tech:</strong> • SQL • Power BI</p>
+
     <ul>
       <li>Shows overall sales, profit, and quantity summary</li>
       <li>Displays year-wise sales analysis</li>
       <li>Analyzes total sales by state</li>
       <li>Compares sales distribution by region</li>
-      <li>Shows country-wise sales on map</li>
       <li>Tracks sales by ship mode, segment, and category</li>
-      <li>Provides customer-wise sales and quantity details</li>
-      <li>Includes interactive filters for deeper analysis</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="superstore.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   rail: `
     <img src="sm.jpg" class="project-modal-img" />
-    <h3>Shows overall space mission launch statistics</h3>
-    <p><strong>Tech:</strong> • SQL • Power Bi</p>
+
+    <h3>Space Mission Dashboard</h3>
+
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
+
     <ul>
       <li>Displays total launch count and success rate</li>
-      <li>Analyzes mission status (success, failure, partial)</li>
-      <li>Shows year-wise mission success trends</li>
-      <li>Compares launch count by rocket type</li>
-      <li>Compares launch count by space agencies/companies</li>
-      <li>Allows filtering by rocket status and launch location</li>
-      <li>Uses a dark, space-themed analytics dashboard design</li>
+      <li>Shows year-wise mission trends</li>
+      <li>Compares rocket types and agencies</li>
+      <li>Filters by launch location and rocket status</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="space.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   heater: `
     <img src="ecs.jpg" class="project-modal-img" />
-    <h3>Shows overall ecommerce sales performance summary</h3>
+
+    <h3>Ecommerce Sales Dashboard</h3>
+
     <p><strong>Tech:</strong> • Python • Power BI</p>
+
     <ul>
-      <li>Displays key KPIs like total customers, quantity, and revenue</li>
-      <li>Tracks average order value and loyalty points</li>
-      <li>Analyzes delivery days by gender</li>
-      <li>Shows returns based on shipping mode</li>
-      <li>Compares sales by product category</li>
-      <li>Analyzes payment methods with loyalty and shipping mode</li>
-      <li>Provides filters for gender, location, age, and product category</li>
+      <li>Tracks revenue, customers, and orders</li>
+      <li>Analyzes delivery and return trends</li>
+      <li>Compares sales by category</li>
+      <li>Interactive filters for deep analysis</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="ecommerce.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   test: `
     <img src="ipl.png" class="project-modal-img" />
-    <h3>Displays overall IPL tournament analysis</h3>
-    <p><strong>Tech:</strong> • Tablue </p>
+
+    <h3>IPL Tournament Analysis</h3>
+
+    <p><strong>Tech:</strong> • Tableau</p>
+
     <ul>
-      <li>Shows title-winning team details</li>
-      <li>Highlights Orange Cap (top run-scorer)</li>
-      <li>Highlights Purple Cap (top wicket-taker)</li>
-      <li>Shows total 4s and 6s in the tournament</li>
-      <li>Analyzes matches won based on toss decision</li>
-      <li>Compares bat vs field winning percentage</li>
-      <li>Allows season-wise filtering for analysis</li>
+      <li>Shows Orange Cap and Purple Cap details</li>
+      <li>Analyzes toss decisions and match wins</li>
+      <li>Displays total 4s and 6s</li>
+      <li>Season-wise dashboard filtering</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="ipl.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   ev: `
     <img src="cca.png" class="project-modal-img" />
-    <h3>Shows overall customer churn analysis summary</h3>
+
+    <h3>Customer Churn Analysis</h3>
+
     <p><strong>Tech:</strong> • SQL • Power BI</p>
+
     <ul>
-      <li>Displays total customer count and key KPI's</li>
-      <li>Analyzes customer distribution by geography</li>
-      <li>Shows customer count by age groups</li>
-      <li>Compares customer count by gender</li>
-      <li>Analyzes churn based on number of products</li>
-      <li>Shows impact of credit card and active membership status</li>
-      <li>Provides detailed customer-level data table</li>
+      <li>Analyzes churn by age, gender, and geography</li>
+      <li>Tracks active members and credit card users</li>
+      <li>Customer-level detailed analysis</li>
+      <li>Interactive KPI dashboard</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="churn.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   tracker: `
     <img src="cba.png" class="project-modal-img" />
-    <h3>Tracker Control Unit</h3>
-    <p><strong>Tech:</strong> • Power BI • SQL</p>
+
+    <h3>Customer Behavior Dashboard</h3>
+
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
+
     <ul>
-      <li>Displays average purchase amount</li>
-      <li>Shows average customer review rating</li>
-      <li>Analyzes subscription status distribution</li>
-      <li>Compares revenue by product category</li>
-      <li>Shows sales by product category</li>
-      <li>Analyzes revenue by age group</li>
-      <li>Includes filters for gender, category, and shipping type</li>
+      <li>Shows customer review ratings</li>
+      <li>Analyzes subscription distribution</li>
+      <li>Compares revenue by categories</li>
+      <li>Tracks age-group wise revenue</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="behavior.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
 
   ulp: `
     <img src="vk.jpg" class="project-modal-img" />
-    <h3>Shows Virat Kohli’s performance across formats</h3>
-    <p><strong>Tech:</strong> • Power BI • SQL</p>
+
+    <h3>Virat Kohli Performance Analysis</h3>
+
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
+
     <ul>
-      <li>Displays total matches and runs</li>
-      <li>Highlights highest and lowest scores</li>
-      <li>Enables year-wise performance analysis</li>
-      <li>Compares runs against opponent teams</li>
-      <li>Shows scoring milestones (50s, 100s, 200s)</li>
-      <li>Analyzes ground-wise performance</li>
-      <li>Uses a clean, dark analytics dashboard design</li>
+      <li>Displays total runs and matches</li>
+      <li>Shows highest and lowest scores</li>
+      <li>Opponent-wise performance analysis</li>
+      <li>Tracks 50s, 100s, and 200s</li>
     </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/yourusername/project" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="virat.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
   `,
-   sales: `
-  <img src="ESA.jpg" class="project-modal-img" />
 
-  <h3>Sales Dashboard Analysis</h3>
-
-  <p><strong>Tech:</strong> • SQL • Power BI • Excel</p>
-
-  <ul>
-    <li>Analyzed overall sales, profit, and customer trends</li>
-    <li>Created interactive dashboard with filters</li>
-    <li>Performed region-wise and category-wise analysis</li>
-    <li>Built KPI metrics for business insights</li>
-  </ul>
-
-  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
-    
-    <a href="https://github.com/yourusername/project" target="_blank" 
-       style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
-       🔗 GitHub
-    </a>
-
-    <a href="project.pdf" target="_blank" 
-       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
-       📄 View PDF
-    </a>
-
-    <a href="#" target="_blank" 
-       style="padding:8px 14px; background:#f59e0b; color:#000; border-radius:6px; text-decoration:none;">
-       🌐 Live Demo
-    </a>
-
-  </div>
-`,
 };
-
 
 /* ===============================
    OPEN / CLOSE MODAL
