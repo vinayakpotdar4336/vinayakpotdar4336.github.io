@@ -9,36 +9,35 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 const projectData = {
+ultra: `
+  <img src="sss.jpg" class="project-modal-img" />
 
-  ultra: `
-    <img src="sss.jpg" class="project-modal-img" />
+  <h3>SuperStore Sales Dashboard</h3>
 
-    <h3>SuperStore Sales Dashboard</h3>
+  <p><strong>Tech:</strong> • SQL • Power BI</p>
 
-    <p><strong>Tech:</strong> • SQL • Power BI</p>
+  <ul>
+    <li>Shows overall sales, profit, and quantity summary</li>
+    <li>Displays year-wise sales analysis</li>
+    <li>Analyzes total sales by state</li>
+    <li>Compares sales distribution by region</li>
+    <li>Tracks sales by ship mode, segment, and category</li>
+  </ul>
 
-    <ul>
-      <li>Shows overall sales, profit, and quantity summary</li>
-      <li>Displays year-wise sales analysis</li>
-      <li>Analyzes total sales by state</li>
-      <li>Compares sales distribution by region</li>
-      <li>Tracks sales by ship mode, segment, and category</li>
-    </ul>
+  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
 
-    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+    <a href="https://github.com/vinayakpotdar4336/Superstore" target="_blank"
+    style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+    🔗 GitHub
+    </a>
 
-      <a href="https://github.com/vinayakpotdar4336/Superstore" target="_blank">
-      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
-      🔗 GitHub
-      </a>
+    <a href="superstore.pdf" target="_blank"
+    style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+    📄 View PDF
+    </a>
 
-      <a href="superstore.pdf" target="_blank"
-      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
-      📄 View PDF
-      </a>
-
-    </div>
-  `,
+  </div>
+`,
 
   rail: `
     <img src="sm.jpg" class="project-modal-img" />
