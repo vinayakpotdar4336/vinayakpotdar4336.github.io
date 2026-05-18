@@ -31,7 +31,7 @@ ultra: `
     🔗 GitHub
     </a>
 
-    <a href="superstore.pdf" target="_blank"
+    <a href="sss.pdf" target="_blank"
     style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
     📄 View PDF
     </a>
@@ -60,7 +60,7 @@ ultra: `
       🔗 GitHub
       </a>
 
-      <a href="space.pdf" target="_blank"
+      <a href="sm.pdf" target="_blank"
       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
       📄 View PDF
       </a>
