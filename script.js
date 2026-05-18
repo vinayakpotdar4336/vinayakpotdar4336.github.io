@@ -145,7 +145,7 @@ ultra: `
       🔗 GitHub
       </a>
 
-      <a href="churn.pdf" target="_blank"
+      <a href="cca.pdf" target="_blank"
       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
       📄 View PDF
       </a>
@@ -174,7 +174,7 @@ ultra: `
       🔗 GitHub
       </a>
 
-      <a href="behavior.pdf" target="_blank"
+      <a href="cba.pdf" target="_blank"
       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
       📄 View PDF
       </a>
@@ -203,7 +203,7 @@ ultra: `
       🔗 GitHub
       </a>
 
-      <a href="virat.pdf" target="_blank"
+      <a href="vk.pdf" target="_blank"
       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
       📄 View PDF
       </a>
