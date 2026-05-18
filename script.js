@@ -210,6 +210,34 @@ ultra: `
 
     </div>
   `,
+   sales: `
+    <img src="vk.jpg" class="project-modal-img" />
+
+    <h3>Virat Kohli Performance Analysis</h3>
+
+    <p><strong>Tech:</strong> • SQL • Power BI</p>
+
+    <ul>
+      <li>Displays total runs and matches</li>
+      <li>Shows highest and lowest scores</li>
+      <li>Opponent-wise performance analysis</li>
+      <li>Tracks 50s, 100s, and 200s</li>
+    </ul>
+
+    <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+      <a href="https://github.com/vinayakpotdar4336/Virat-Kohli" target="_blank"
+      style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+      🔗 GitHub
+      </a>
+
+      <a href="vk.pdf" target="_blank"
+      style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+      📄 View PDF
+      </a>
+
+    </div>
+  `,
 healthcare: `
   <img src="netflix.jpg" class="project-modal-img" />
 
