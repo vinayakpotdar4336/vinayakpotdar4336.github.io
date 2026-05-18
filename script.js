@@ -211,7 +211,7 @@ ultra: `
     </div>
   `,
    sales: `
-    <img src="vk.jpg" class="project-modal-img" />
+    <img src="ESA.jpg" class="project-modal-img" />
 
     <h3>Ecommerce Sales Analysis Dashboard</h3>
 
@@ -232,7 +232,7 @@ ultra: `
       🔗 GitHub
       </a>
 
-      <a href="vk.pdf" target="_blank"
+      <a href="ESA.pdf" target="_blank"
       style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
       📄 View PDF
       </a>
