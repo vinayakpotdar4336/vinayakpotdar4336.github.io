@@ -243,7 +243,7 @@ healthcare: `
 
   <h3>Healthcare Dashboard</h3>
 
-  <p><strong>Tech:</strong> • Power BI • SQL</p>
+  <p><strong>Tech:</strong> • Power BI • SQL • Excel • Looker studio • Tableau</p>
 
   <ul>
     <li>Analyzed movies and TV shows dataset</li>
@@ -299,9 +299,9 @@ wave: `
 coffee: `
   <img src="coffee.jpg" class="project-modal-img" />
 
-  <h3>Coffee Sales Analysis Dashboard</h3>
+  <h3>Cafe Sales Analysis Dashboard</h3>
 
-  <p><strong>Tech:</strong> • SQL • Power BI</p>
+  <p><strong>Tech:</strong> • Excel</p>
 
   <ul>
     <li>Analyzed outlet-wise sales performance</li>
@@ -312,7 +312,7 @@ coffee: `
 
   <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
 
-    <a href="https://github.com/vinayakpotdar4336" target="_blank"
+    <a href="https://github.com/vinayakpotdar4336/Cafe-Sales" target="_blank"
     style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
     🔗 GitHub
     </a>
