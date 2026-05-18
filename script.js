@@ -272,7 +272,7 @@ wave: `
 
   <h3>Wave Shoes Store Sales Analytics Dashboard</h3>
 
-  <p><strong>Tech:</strong> • Power BI • Excel</p>
+  <p><strong>Tech:</strong> • Looker Studio • Google Excel Sheets </p>
 
   <ul>
     <li>Tracks employee attrition and retention</li>
@@ -288,7 +288,7 @@ wave: `
     🔗 GitHub
     </a>
 
-    <a href="hr.pdf" target="_blank"
+    <a href="Wave_Shoes_Sales_Dashboard.pdf" target="_blank"
     style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
     📄 View PDF
     </a>
