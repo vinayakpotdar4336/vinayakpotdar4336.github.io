@@ -227,7 +227,7 @@ ultra: `
 
     <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
 
-      <a href="https://github.com/vinayakpotdar4336/Virat-Kohli" target="_blank"
+      <a href="https://github.com/vinayakpotdar4336/Ecommerce-Sales-Analysis" target="_blank"
       style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
       🔗 GitHub
       </a>
