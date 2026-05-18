@@ -259,7 +259,7 @@ healthcare: `
     🔗 GitHub
     </a>
 
-    <a href="netflix.pdf" target="_blank"
+    <a href="Healthcare.pdf" target="_blank"
     style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
     📄 View PDF
     </a>
@@ -317,7 +317,7 @@ coffee: `
     🔗 GitHub
     </a>
 
-    <a href="blinkit.pdf" target="_blank"
+    <a href="Cafe.pdf" target="_blank"
     style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
     📄 View PDF
     </a>
