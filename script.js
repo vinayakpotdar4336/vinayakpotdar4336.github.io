@@ -239,7 +239,7 @@ ultra: `
     </div>
   `,
 healthcare: `
-  <img src="netflix.jpg" class="project-modal-img" />
+  <img src="health.jpg" class="project-modal-img" />
 
   <h3>Healthcare Dashboard</h3>
 
@@ -297,7 +297,7 @@ wave: `
 `,
 
 coffee: `
-  <img src="blinkit.jpg" class="project-modal-img" />
+  <img src="coffee.jpg" class="project-modal-img" />
 
   <h3>Coffee Sales Analysis Dashboard</h3>
 
