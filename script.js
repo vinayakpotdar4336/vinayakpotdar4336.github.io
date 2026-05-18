@@ -210,7 +210,92 @@ ultra: `
 
     </div>
   `,
+healthcare: `
+  <img src="netflix.jpg" class="project-modal-img" />
 
+  <h3>Healthcare Dashboard</h3>
+
+  <p><strong>Tech:</strong> • Power BI • SQL</p>
+
+  <ul>
+    <li>Analyzed movies and TV shows dataset</li>
+    <li>Shows genre-wise content distribution</li>
+    <li>Displays release year trends</li>
+    <li>Tracks ratings and country-wise content</li>
+  </ul>
+
+  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+    <a href="https://github.com/vinayakpotdar4336" target="_blank"
+    style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+    🔗 GitHub
+    </a>
+
+    <a href="netflix.pdf" target="_blank"
+    style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+    📄 View PDF
+    </a>
+
+  </div>
+`,
+
+wave: `
+  <img src="hr.jpg" class="project-modal-img" />
+
+  <h3>Wave Shoes Store Sales Analytics Dashboard</h3>
+
+  <p><strong>Tech:</strong> • Power BI • Excel</p>
+
+  <ul>
+    <li>Tracks employee attrition and retention</li>
+    <li>Analyzes department-wise performance</li>
+    <li>Displays employee satisfaction metrics</li>
+    <li>Interactive KPI dashboard for HR insights</li>
+  </ul>
+
+  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+    <a href="https://github.com/vinayakpotdar4336" target="_blank"
+    style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+    🔗 GitHub
+    </a>
+
+    <a href="hr.pdf" target="_blank"
+    style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+    📄 View PDF
+    </a>
+
+  </div>
+`,
+
+coffee: `
+  <img src="blinkit.jpg" class="project-modal-img" />
+
+  <h3>Coffee Sales Analysis Dashboard</h3>
+
+  <p><strong>Tech:</strong> • SQL • Power BI</p>
+
+  <ul>
+    <li>Analyzed outlet-wise sales performance</li>
+    <li>Displays product category insights</li>
+    <li>Tracks revenue and customer ratings</li>
+    <li>Interactive dashboard with filters</li>
+  </ul>
+
+  <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+
+    <a href="https://github.com/vinayakpotdar4336" target="_blank"
+    style="padding:8px 14px; background:#38bdf8; color:#000; border-radius:6px; text-decoration:none;">
+    🔗 GitHub
+    </a>
+
+    <a href="blinkit.pdf" target="_blank"
+    style="padding:8px 14px; background:#22c55e; color:#000; border-radius:6px; text-decoration:none;">
+    📄 View PDF
+    </a>
+
+  </div>
+`,
 };
 
 /* ===============================
