@@ -268,7 +268,7 @@ healthcare: `
 `,
 
 wave: `
-  <img src="hr.jpg" class="project-modal-img" />
+  <img src="Wave_Shoes_Sales.jpg" class="project-modal-img" />
 
   <h3>Wave Shoes Store Sales Analytics Dashboard</h3>
 
