@@ -213,15 +213,16 @@ ultra: `
    sales: `
     <img src="vk.jpg" class="project-modal-img" />
 
-    <h3>Virat Kohli Performance Analysis</h3>
+    <h3>Ecommerce Sales Analysis Dashboard</h3>
 
-    <p><strong>Tech:</strong> • SQL • Power BI</p>
+    <p><strong>Tech:</strong> • Excel </p>
 
     <ul>
-      <li>Displays total runs and matches</li>
-      <li>Shows highest and lowest scores</li>
-      <li>Opponent-wise performance analysis</li>
-      <li>Tracks 50s, 100s, and 200s</li>
+      <li>Total sales reached $2.29M with strong overall profit</li>
+      <li>Profit margin stands at 12.47%, showing healthy business performance</li>
+      <li>Technology category contributes the highest profit and sales share</li>
+      <li>Phones and Chairs are the top-selling subcategories</li>
+      <li>Sales and profits show an increasing trend toward the year end</li>
     </ul>
 
     <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
@@ -246,10 +247,11 @@ healthcare: `
   <p><strong>Tech:</strong> • Power BI • SQL • Excel • Looker studio • Tableau</p>
 
   <ul>
-    <li>Analyzed movies and TV shows dataset</li>
-    <li>Shows genre-wise content distribution</li>
-    <li>Displays release year trends</li>
-    <li>Tracks ratings and country-wise content</li>
+    <li>Analyzed patient admissions and discharge trends</li>
+    <li>Built interactive healthcare KPI dashboards</li>
+    <li>Visualized age-wise and disease-wise patient data</li>
+    <li>Tracked ICU stay duration and hospital performance</li>
+    <li>Created dynamic reports using Power BI, SQL, and Excel</li>
   </ul>
 
   <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
@@ -275,10 +277,11 @@ wave: `
   <p><strong>Tech:</strong> • Looker Studio • Google Excel Sheets </p>
 
   <ul>
-    <li>Tracks employee attrition and retention</li>
-    <li>Analyzes department-wise performance</li>
-    <li>Displays employee satisfaction metrics</li>
-    <li>Interactive KPI dashboard for HR insights</li>
+    <li>Tracks total sales, transactions, and quantity sold</li>
+    <li>Analyzes category-wise and state-wise sales performance</li>
+   <li>Displays monthly sales trends and profit insights</li>
+   <li>Interactive dashboard with filters for better analysis</li>
+   <li>Visualizes customer and regional sales distribution</li>
   </ul>
 
   <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
@@ -304,10 +307,11 @@ coffee: `
   <p><strong>Tech:</strong> • Excel</p>
 
   <ul>
-    <li>Analyzed outlet-wise sales performance</li>
-    <li>Displays product category insights</li>
-    <li>Tracks revenue and customer ratings</li>
-    <li>Interactive dashboard with filters</li>
+    <li>Total sales reached $698.8K with 149K+ transactions</li>
+   <li>Peak sales hours are 8 AM to 10 AM</li>
+   <li>Hell’s Kitchen store shows the highest sales and footfall</li>
+   <li>Barista Espresso is the top-selling product</li>
+   <li>Friday has the highest orders, while Saturday has the lowest</li>
   </ul>
 
   <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
